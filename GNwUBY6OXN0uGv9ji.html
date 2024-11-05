@@ -1,0 +1,323 @@
+<html><head><base href="https://websim.creativengine.art/contact">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact The Stokes Team | Your Mortgage Partners</title>
+<style>
+:root {
+  --primary: #1a4f7c;
+  --secondary: #4CAF50;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --accent: #f39c12;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  padding-top: 80px;
+}
+
+nav {
+  background: var(--primary);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-info {
+  animation: fadeIn 1s ease;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: var(--accent);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-right: 1rem;
+}
+
+.office-hours {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  display: none;
+  background: var(--secondary);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav li {
+    margin: 0.5rem 0;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://websim.creativengine.art/home">Home</a></li>
+      <li><a href="https://websim.creativengine.art/loan-options">Loan Options</a></li>
+      <li><a href="https://websim.creativengine.art/calculators">Calculators</a></li>
+      <li><a href="https://websim.creativengine.art/about">About Us</a></li>
+      <li><a href="https://websim.creativengine.art/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h1>Get in Touch</h1>
+      <p>We're here to help with all your mortgage needs. Reach out to us through any of these channels:</p>
+      
+      <div class="contact-method">
+        <i class="fas fa-phone contact-icon"></i>
+        <div>
+          <h3>Phone</h3>
+          <p>(918) 863-8663</p>
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <i class="fas fa-envelope contact-icon"></i>
+        <div>
+          <h3>Email</h3>
+          <p>stokes@cityscapehome.com</p>
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <div>
+          <h3>Office</h3>
+          <p>1115 S Lewis Ave Suite D<br>Tulsa, OK 74104</p>
+        </div>
+      </div>
+      
+      <div class="office-hours">
+        <h3><i class="fas fa-clock"></i> Office Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+        Saturday: 10:00 AM - 2:00 PM<br>
+        Sunday: Closed</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="success-message" id="successMessage">
+        Thank you for your message! We'll be in touch soon.
+      </div>
+      
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="inquiry">Type of Inquiry</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">Select an option</option>
+            <option value="purchase">New Purchase</option>
+            <option value="refinance">Refinancing</option>
+            <option value="information">General Information</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simulate form submission
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    
+    // Simulate API call delay
+    setTimeout(() => {
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+        
+        // Reset form
+        this.reset();
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 5000);
+    }, 1500);
+});
+
+// Phone number formatting
+document.getElementById('phone').addEventListener('input', function(e) {
+    let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="https://websim.creativengine.art/"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.href = this.getAttribute('href');
+    });
+});
+</script>
+</body></html>
